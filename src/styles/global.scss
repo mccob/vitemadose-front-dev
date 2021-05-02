@@ -1,0 +1,40 @@
+@import 'bootstrap/scss/functions';
+@import "bootstrap-variables";
+@import 'bootstrap/scss/bootstrap';
+
+@import "bootstrap-additional";
+
+@import "./fontello-icons";
+
+//$base-color: #ffbf16;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    padding: {
+        bottom: 3.2rem;
+    };
+}
+
+footer {
+    margin: {
+        top: 12rem !important;
+    };
+    color: $gray-500;
+}
+
+.spacer {
+    height: 0;
+    line-height: 0;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+select[required]:invalid {
+    color: $gray-600;
+}
