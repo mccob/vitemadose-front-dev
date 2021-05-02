@@ -129,7 +129,7 @@ export abstract class AbstractVmdRdvView extends LitElement {
                 commune.code,
                 commune.codePostal,
                 libelleUrlPathDeCommune(commune),
-				this.typeVaccin
+				t
             );
             return;
         }
@@ -607,7 +607,7 @@ export class VmdRdvParCommuneView extends AbstractVmdRdvView {
             </label>
             <div class="col">
               <vmd-button-switch class="mb-3"
-                     codeSelectionne="${this.critèreDeTri}"
+                     codeSelectionne="${this.typeVaccin}"
                      .options="${Array.from(FILTRE_TYPE_VACCIN.values()).map(tc => ({code: tc.codeTypeVaccin, libelle: tc.libelle }))}"
                      @changed="${(event: ValueStrCustomEvent<CodeTypeVaccin>) => this.critereVaccinUpdated(event.detail.value)}">
               </vmd-button-switch>
